@@ -1,39 +1,36 @@
 ## name: Jason Davis & Lieven Slenders
-## Date: 
-## Lesson : 
+## Date: 8-01-2015
+## Lesson 4 
 # ------------------------
 
-# set the temporary fodler for `raster` operations
-options(rasterTmpDir='~/your_temp_dir')
-# set wd
+
+# I set wd
 setwd("D:/workspace/geoscripting/Rprojects")
-# Import packages
+# II Import packages
 library(sp)
 library(raster)
 
-# Source functions
-# source('R/ageCalculator.R')
-# source('R/HelloWorld.R')
-# source('R/minusRaster.R')
+# III functions used in Lesson 4
+source('R/minusRaster.R')
 source('R/isLeap.R')
-
-# self study 
-source('R/ss_l4.R')
-
+source('R/selfS_l4.R') # self study 
+source('R/isLeap.R')
 
 
 #--------------------------------
-# call leap year function
+# 1. Assignment Lesson 4. Leapyear function 
 
+# testing on differnt input 
 isLeap(2000)
 isLeap(1400)
 isLeap('john')
 isLeap(2000.2)
 isLeap(1999)
 
+#----------------------------------
+# 2. Raster demo - Minusraster
 
-
-
+minusRaster(r, r2, plot=TRUE) 
 
 
 
